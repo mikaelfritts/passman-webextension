@@ -21,7 +21,7 @@ Getting it to run (until an official release has fixed this):
  - `cd passman-webextension`
  - `npm install`
  - `grunt build`
- - [chrome extensions](chrome://extensions/)
+ - Navigate to: chrome://extensions/
  - Turn off the original passman
  - Switch on developer mode
  - Upload unpacked extension: choose the `dist` folder in the `passman-webextension` directory
