@@ -11,8 +11,23 @@
 
 
 
+Passman @359f8491b7faeaa48d50abf712233dd81953597d with pr #270 applied.
 
+Fixes issue with Vault  not loading on Google Chrome 68.0.3440.106 Mac.
 
+Getting it to run (until an official release has fixed this):
+
+ - `git clone git@github.com:mcguffin/passman-webextension.git`
+ - `cd passman-webextension`
+ - `npm install`
+ - `grunt build`
+ - (chrome://extensions/)[chrome://extensions/]
+ - Turn off the original passman
+ - Switch on developer mode
+ - Upload unpacked extension: choose the `dist` folder in the `passman-webextension` directory
+ - Switch developer mode off again.
+
+My personal advice: Don't take any code from strangers.
 
 
 
@@ -27,7 +42,7 @@ The passwords will be provided by [passman](https://github.com/nextcloud/passman
 
 ## Features
 - Add multiple accounts
-- List accounts for the current site 
+- List accounts for the current site
 - Detect new logins and save them to passman
 - Update existing logins in passman
 - Build-in OTP generator

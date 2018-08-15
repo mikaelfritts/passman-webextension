@@ -197,7 +197,8 @@ window.PAPI = (function () {
         headers.append("Accept", " application/json, text/plain, */*");
         var opts = {
             method: method,
-            headers: headers
+            headers: headers,
+			credentials: 'omit' 
 
         };
 
